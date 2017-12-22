@@ -47,7 +47,7 @@ public class AppController {
 	}
 	
 	@RequestMapping(value = "/HMApp/displaySortedLists", method = RequestMethod.GET)
-	public List<AppSort> displayLists(Model model) {
+	public @ResponseBody List<AppSort> displayLists(Model model) {
 		//model.addAttribute("appSort", new AppSort());
 		//model.addAttribute("displayLists", this.appService.displaySortedList());
 		
